@@ -1,0 +1,27 @@
+;;;Using a pre-built "engine"
+
+(in-package "PROJECT1")
+
+;;;RULES:
+;;;Format: (<current-state-pattern -> <next-state-pattern> <rule name>)
+
+;;;While they may not be perfect, I believe they should be able to catch all
+;;;scenarios in NIM 2-3-4-5
+
+(setf *rules* '( ((1)       ->  (0)                R1) 
+		 ((1 a)     ->  (1)                R2)
+		 ((1 a b)   ->  (1 a)              R3)
+		 ((1 a b c) ->  (1 a b)            R4)
+		 ((2)       ->  (1)                R5)
+		 ((2 a)     ->  (1 a)              R6)
+		 ((2 a b)   ->  (1 a b)            R7)
+		 ((2 a b c) ->  (1 a b c)          R8)
+		 ((3)       ->  (1)                R9)
+		 ((3 a)     ->  (1 a)             R10)
+		 ((3 a b)   ->  (1 a b)           R11)
+		 ((4)       ->  (1)               R12)
+		 ((4 a)     ->  (1 a)             R13)
+		 ((5)       ->  (1)               R14)
+		                                     ))
+
+;;;end of file

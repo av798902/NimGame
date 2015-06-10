@@ -1,0 +1,6 @@
+In NIM, there are multiple sections of lines or sticks. A player or the machine opponent can remove as many sticks as they want or as few as 1 stick as long as the removed sticks come from a single section. Players will alternate turns to remove the sticks. Our version of NIM is displayed as a "tree." We are using a 2,3,4,5 structure for our game. It is displayed as the following:
+
+   | |   
+  | | |
+ | | | |
+| | | | |
